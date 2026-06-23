@@ -1,4 +1,7 @@
-import { Link } from "@tanstack/react-router";
+import { Mail, MessageCircle, MapPin } from "lucide-react";
+import { SITE, WHATSAPP_LINK } from "@/lib/site";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _unused = null;
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 import { SITE, WHATSAPP_LINK } from "@/lib/site";
 
