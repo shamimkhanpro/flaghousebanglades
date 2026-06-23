@@ -1,9 +1,5 @@
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 import { SITE, WHATSAPP_LINK } from "@/lib/site";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const _unused = null;
-import { Mail, MessageCircle, MapPin } from "lucide-react";
-import { SITE, WHATSAPP_LINK } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -14,7 +10,7 @@ export function Footer() {
             <img
               src={SITE.logoUrl}
               alt={SITE.name}
-              className="h-14 w-14 rounded-md bg-white/95 p-1 object-contain"
+              className="h-16 w-auto rounded-md bg-white/95 p-1 object-contain"
             />
             <div>
               <div className="font-display text-xl font-bold uppercase tracking-wider">
@@ -34,10 +30,11 @@ export function Footer() {
             Explore
           </h4>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/" className="text-white/80 hover:text-white">Home</Link></li>
-            <li><Link to="/categories" className="text-white/80 hover:text-white">Categories</Link></li>
-            <li><Link to="/inquiry" className="text-white/80 hover:text-white">Corporate Inquiry</Link></li>
-            <li><Link to="/contact" className="text-white/80 hover:text-white">Contact</Link></li>
+            <li><a href="#top" className="text-white/80 hover:text-white">Home</a></li>
+            <li><a href="#products" className="text-white/80 hover:text-white">Products</a></li>
+            <li><a href="#about" className="text-white/80 hover:text-white">About</a></li>
+            <li><a href="#inquiry" className="text-white/80 hover:text-white">Get a Quote</a></li>
+            <li><a href="#contact" className="text-white/80 hover:text-white">Contact</a></li>
           </ul>
         </div>
 
