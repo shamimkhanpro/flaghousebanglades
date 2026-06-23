@@ -1,11 +1,11 @@
 {
-  "asset_id": "66d2f4e9-ba34-47f0-b17a-ab17cda39136",
-  "content_type": "image/jpeg",
-  "created_at": "2026-06-23T12:42:14Z",
-  "original_filename": "flag-house-logo.jpeg",
+  "version": 1,
+  "asset_id": "f4df0eee-e7d1-4569-9701-5c9f4d96a0e2",
   "project_id": "d09e2e24-ad9d-4c41-83fc-9a5708819785",
-  "r2_key": "a/v1/d09e2e24-ad9d-4c41-83fc-9a5708819785/66d2f4e9-ba34-47f0-b17a-ab17cda39136/flag-house-logo.jpeg",
-  "size": 25460,
-  "url": "/__l5e/assets-v1/66d2f4e9-ba34-47f0-b17a-ab17cda39136/flag-house-logo.jpeg",
-  "version": 1
+  "url": "/__l5e/assets-v1/f4df0eee-e7d1-4569-9701-5c9f4d96a0e2/FHB_logo.png",
+  "r2_key": "a/v1/d09e2e24-ad9d-4c41-83fc-9a5708819785/f4df0eee-e7d1-4569-9701-5c9f4d96a0e2/FHB_logo.png",
+  "original_filename": "FHB_logo.png",
+  "size": 45839,
+  "content_type": "image/png",
+  "created_at": "2026-06-23T16:30:29Z"
 }
