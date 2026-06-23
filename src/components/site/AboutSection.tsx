@@ -1,10 +1,6 @@
 import { Check } from "lucide-react";
 import aboutImg from "@/assets/about-craft.jpg";
 
-// keep id for nav anchor
-const SECTION_ID = "about";
-import aboutImg from "@/assets/about-craft.jpg";
-
 const POINTS = [
   "In-house manufacturing — full control over fabric, print and finish",
   "Strict color matching to Pantone standards",
@@ -14,7 +10,7 @@ const POINTS = [
 
 export function AboutSection() {
   return (
-    <section className="container-x py-20">
+    <section id="about" className="container-x py-20">
       <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
         <div className="relative">
           <div className="absolute -inset-3 -z-10 rounded-2xl bg-gradient-to-br from-brand-green/15 to-brand-gold/15" />
@@ -48,12 +44,12 @@ export function AboutSection() {
             ))}
           </ul>
           <div className="mt-8">
-            <Link
-              to="/inquiry"
+            <a
+              href="#inquiry"
               className="inline-flex items-center justify-center rounded-md bg-brand-green px-7 py-3.5 font-display text-sm font-semibold uppercase tracking-widest text-white shadow-md transition-all hover:bg-brand-green-dark"
             >
               Start Your Order
-            </Link>
+            </a>
           </div>
         </div>
       </div>
