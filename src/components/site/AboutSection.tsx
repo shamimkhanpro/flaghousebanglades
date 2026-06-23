@@ -1,5 +1,8 @@
-import { Link } from "@tanstack/react-router";
 import { Check } from "lucide-react";
+import aboutImg from "@/assets/about-craft.jpg";
+
+// keep id for nav anchor
+const SECTION_ID = "about";
 import aboutImg from "@/assets/about-craft.jpg";
 
 const POINTS = [
