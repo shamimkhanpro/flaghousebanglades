@@ -1,29 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteShell } from "@/components/site/SiteShell";
+import { Hero } from "@/components/site/Hero";
+import { TrustStrip } from "@/components/site/TrustStrip";
+import { CategoryGrid } from "@/components/site/CategoryGrid";
+import { AboutSection } from "@/components/site/AboutSection";
+import { InquiryCTA } from "@/components/site/InquiryCTA";
+import { ContactBlock } from "@/components/site/ContactBlock";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Flag House Bangladesh — Premium Flag Manufacturer" },
+      { name: "description", content: "Premium national, corporate, table and custom flags manufactured in Bangladesh. Trusted by businesses, institutions and events nationwide." },
+      { property: "og:title", content: "Flag House Bangladesh — Premium Flag Manufacturer" },
+      { property: "og:description", content: "Premium national, corporate, table and custom flags manufactured in Bangladesh." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <SiteShell>
+      <Hero />
+      <TrustStrip />
+      <CategoryGrid />
+      <AboutSection />
+      <InquiryCTA />
+      <ContactBlock />
+    </SiteShell>
   );
 }
