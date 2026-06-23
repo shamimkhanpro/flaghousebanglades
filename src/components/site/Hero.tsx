@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import heroFlag from "@/assets/hero-flag.jpg";
 
 export function Hero() {
@@ -30,18 +29,18 @@ export function Hero() {
             in how they display.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <Link
-              to="/inquiry"
+            <a
+              href="#inquiry"
               className="inline-flex items-center justify-center rounded-md bg-brand-red px-7 py-3.5 font-display text-sm font-semibold uppercase tracking-widest text-white shadow-lg shadow-red-900/30 transition-all hover:bg-brand-red/90 hover:shadow-xl"
             >
               Request Corporate Quote
-            </Link>
-            <Link
-              to="/categories"
+            </a>
+            <a
+              href="#products"
               className="inline-flex items-center justify-center rounded-md border border-white/40 bg-white/5 px-7 py-3.5 font-display text-sm font-semibold uppercase tracking-widest text-white backdrop-blur transition-all hover:bg-white/15"
             >
-              Browse Categories
-            </Link>
+              Browse Products
+            </a>
           </div>
         </div>
       </div>

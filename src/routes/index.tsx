@@ -22,6 +22,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <SiteShell>
+      <div id="top" />
       <Hero />
       <TrustStrip />
       <CategoryGrid />
