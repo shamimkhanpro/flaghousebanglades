@@ -54,7 +54,7 @@ export function QualityStandards() {
                 s.featured ? "border-brand-green shadow-md" : "border-border"
               }`}
             >
-              <span className={`h-1 w-12 rounded-full bg-${s.accent}`} />
+              <span className={`h-1 w-12 rounded-full ${s.bar}`} />
               <h3 className="mt-5 font-display text-2xl font-bold uppercase tracking-wide text-ink">
                 {s.name}
               </h3>
@@ -62,7 +62,7 @@ export function QualityStandards() {
               <ul className="mt-6 space-y-3">
                 {s.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-ink/85">
-                    <span className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-${s.accent} text-white`}>
+                    <span className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${s.dot} text-white`}>
                       <Check className="h-3 w-3" />
                     </span>
                     <span className="text-sm">{f}</span>
