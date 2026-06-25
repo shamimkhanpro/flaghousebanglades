@@ -20,8 +20,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-white/75">
-            Manufacturer of premium national, corporate, table and custom flags — proudly made in
-            Bangladesh for businesses, institutions and events nationwide.
+            Built to serve corporations, institutions, embassies and event organizers across
+            Bangladesh — manufacturer of premium national, corporate, table and custom flags.
           </p>
         </div>
 
