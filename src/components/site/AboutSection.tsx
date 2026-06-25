@@ -5,7 +5,7 @@ const POINTS = [
   "In-house manufacturing — full control over fabric, print and finish",
   "Strict color matching to Pantone standards",
   "Sample approval before every bulk production run",
-  "Trusted by corporations, embassies and event organizers",
+  "Built to serve corporations, institutions, embassies and event organizers across Bangladesh.",
 ];
 
 export function AboutSection() {
