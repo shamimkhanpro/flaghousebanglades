@@ -1,5 +1,5 @@
 import { InquiryForm } from "./InquiryForm";
-import corporateInquiryImage from "@/assets/corporate-inquiry.jpg.asset.json";
+import corporateInquiryImage from "@/assets/corporate-inquiry.jpg";
 
 export function InquiryCTA() {
   return (
