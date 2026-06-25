@@ -25,7 +25,7 @@ export function InquiryCTA() {
           </p>
           <div className="mt-8 overflow-hidden rounded-xl border border-white/20 bg-white/10 shadow-lg backdrop-blur-sm">
             <img
-              src={corporateInquiryImage.url}
+              src={corporateInquiryImage}
               alt="Premium Bangladesh corporate and desk flags arranged in a modern office"
               width={1024}
               height={768}
