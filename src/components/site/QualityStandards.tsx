@@ -4,13 +4,15 @@ const SERIES = [
   {
     name: "Standard Series",
     tagline: "Everyday institutional use",
-    accent: "brand-gold",
+    bar: "bg-brand-gold",
+    dot: "bg-brand-gold",
     features: ["75D Knitted Polyester"],
   },
   {
     name: "Premium Series",
     tagline: "Corporate & long-term display",
-    accent: "brand-green",
+    bar: "bg-brand-green",
+    dot: "bg-brand-green",
     features: [
       "150D Knitted Polyester",
       "Heavy Canvas Heading",
@@ -21,7 +23,8 @@ const SERIES = [
   {
     name: "Protocol Series",
     tagline: "Official protocol & presentation",
-    accent: "brand-red",
+    bar: "bg-brand-red",
+    dot: "bg-brand-red",
     features: ["Premium Satin", "Blackout Interlining", "Presentation Packaging"],
   },
 ];
