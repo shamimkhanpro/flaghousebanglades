@@ -1,4 +1,5 @@
 import { InquiryForm } from "./InquiryForm";
+import corporateInquiryImage from "@/assets/corporate-inquiry.jpg";
 
 export function InquiryCTA() {
   return (
@@ -22,6 +23,16 @@ export function InquiryCTA() {
             Tell us your requirement — we'll get back with a tailored quote, samples and a
             production timeline.
           </p>
+          <div className="mt-8 overflow-hidden rounded-xl border border-white/20 bg-white/10 shadow-lg backdrop-blur-sm">
+            <img
+              src={corporateInquiryImage}
+              alt="Premium Bangladesh corporate and desk flags arranged in a modern office"
+              width={1024}
+              height={768}
+              loading="lazy"
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </div>
         <div className="rounded-xl bg-background p-6 shadow-xl md:p-8 lg:col-span-3">
           <InquiryForm />
