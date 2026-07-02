@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Hero } from "@/components/site/Hero";
 import { TrustStrip } from "@/components/site/TrustStrip";
@@ -10,6 +11,7 @@ import { WhyFlagHouse } from "@/components/site/WhyFlagHouse";
 import { FanVehicleCollection } from "@/components/site/FanVehicleCollection";
 import { InquiryCTA } from "@/components/site/InquiryCTA";
 import { ContactBlock } from "@/components/site/ContactBlock";
+import { ComingSoonDialog } from "@/components/site/ComingSoonDialog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,6 +26,18 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [welcomeOpen, setWelcomeOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (sessionStorage.getItem("fhb_coming_soon_seen")) return;
+    const t = window.setTimeout(() => {
+      setWelcomeOpen(true);
+      sessionStorage.setItem("fhb_coming_soon_seen", "1");
+    }, 1500);
+    return () => window.clearTimeout(t);
+  }, []);
+
   return (
     <SiteShell>
       <div id="top" />
@@ -37,6 +51,7 @@ function Index() {
       <WhyFlagHouse />
       <InquiryCTA />
       <ContactBlock />
+      <ComingSoonDialog open={welcomeOpen} onOpenChange={setWelcomeOpen} />
     </SiteShell>
   );
 }
